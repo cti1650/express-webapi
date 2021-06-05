@@ -41,3 +41,5 @@ node index.js
 [Express 公式ドキュメント](https://expressjs.com/)
 
 [cors モジュール](https://www.npmjs.com/package/cors)
+
+[GitHub Pages をローカルで動作確認する](https://zenn.dev/snowcait/articles/9420b3ef2a5edcea2a07)
