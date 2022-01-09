@@ -34,9 +34,15 @@ node src/index.js
 
 [http://localhost:3000/](http://localhost:3000/)
 
-# サンプルコード
+## サンプルコード
 
 <a title="Gitpod" href="https://gitpod.io/#https://github.com/cti1650/express_webapi" rel="nofollow noreferrer noopener" target="_blank" class="btn btn-primary">Gitpodでサンプルを実行</a>
+
+### 本番環境
+
+[https://express-webapi-cti-tl.herokuapp.com/](https://express-webapi-cti-tl.herokuapp.com/)
+
+### ソースコード
 
 ```
 const express = require('express');
