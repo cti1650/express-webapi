@@ -40,7 +40,7 @@ node src/index.js
 
 ### 本番環境
 
-[https://express-webapi-cti-tl.herokuapp.com/](https://express-webapi-cti-tl.herokuapp.com/)
+[https://express-webapi-test.herokuapp.com/](https://express-webapi-test.herokuapp.com/)
 
 ### ソースコード
 
