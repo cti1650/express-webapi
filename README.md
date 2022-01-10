@@ -75,3 +75,5 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 - [Node.js(Express) 事始め ＆ Heroku へデプロイまでのメモ - Qiita](https://qiita.com/hkusu/items/e46de8c446840c50aefe)
 
+- [[Node] Expressを使って最速でJSONを返す | Today's Commit](https://t-kojima.github.io/2018/11/02/0047-helloworld-express-with-json/)
+
