@@ -11,6 +11,11 @@ app.use(
     optionsSuccessStatus: 200, //レスポンスstatusを200に設定
   })
 );
-app.get('/', (req, res) => res.send('Hello World!!'));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.get('/', (req, res) => {
+  res.header('Content-Type', 'application/json; charset=utf-8')
+  res.send('{ "message": "hello world!" }')
+});
+app.get('/sample', (req, res) => res.send('Hello World!!'));
+
+app.listen(port, () => console.log(`http://localhost:${port}`));
