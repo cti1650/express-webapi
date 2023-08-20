@@ -5,8 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
+    "start": "node src/server/local.js",
     "start:local": "node src/server/local.js",
+    "start:vercel": "node src/server/vercel.js",
     "build:netlify": "netlify-lambda build express"
   },
   "repository": {
