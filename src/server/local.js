@@ -1,10 +1,15 @@
-'use strict';
+"use strict";
 
 const port = process.env.PORT || 3000;
 
-const app = require('../app');
-const router = require('../router/index');
+const app = require("../app");
+const router = require("../router/index");
+const config = require("../context/config");
 
-app.use('/api/', router);
+app.use(config.endpoint, router);
 
-app.listen(port, () => console.log(`Local app listening on http://localhost:${port}`));
+app.listen(port, () =>
+  console.log(
+    `Local app listening on http://localhost:${port}${config.endpoint}`
+  )
+);

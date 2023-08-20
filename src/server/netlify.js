@@ -1,7 +1,8 @@
-'use strict';
-const app = require('../app');
-const router = require('../router/index');
+"use strict";
+const app = require("../app");
+const router = require("../router/index");
+const config = require("../context/config");
 
-app.use('/api/', router);  // path must route to lambda
+app.use(config.endpoint, router);
 
 module.exports = app;

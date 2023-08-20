@@ -1,5 +1,5 @@
-'use strict';
+"use strict";
 
-const app = require('../../src/server/vercel');
+const app = require("../../src/server/vercel");
 
 module.exports = app;
