@@ -1,8 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-
-const port = process.env.PORT || 3000;
+const bodyParser = require('body-parser');
 
 app.use(
   cors({
@@ -12,10 +11,9 @@ app.use(
   })
 );
 
-app.get('/', (req, res) => {
-  res.header('Content-Type', 'application/json; charset=utf-8')
-  res.send('{ "message": "hello world!" }')
-});
-app.get('/sample', (req, res) => res.send('Hello World!!'));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-app.listen(port, () => console.log(`http://localhost:${port}`));
+module.exports = app
+
+

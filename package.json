@@ -5,7 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node src/server/local.js",
+    "start:local": "node src/server/local.js",
+    "start:vercel": "node src/server/vercel.js",
+    "build:netlify": "netlify-lambda build express"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,9 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "heroku": "^7.59.2"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0"
   }
 }
