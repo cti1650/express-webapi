@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/local.js",
     "start:local": "node src/server/local.js",
-    "start:vercel": "node src/server/vercel.js",
-    "build:netlify": "netlify-lambda build express"
+    "start:vercel": "node src/server/vercel.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,6 @@
     "heroku": "^7.59.2"
   },
   "devDependencies": {
-    "netlify-lambda": "^2.0.16",
     "serverless-http": "^3.2.0"
   }
 }

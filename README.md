@@ -79,3 +79,5 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 - [neverendingqs/netlify-express at 0780127cd575704e2a2a00a1a648ba5a5a66c388](https://github.com/neverendingqs/netlify-express/tree/0780127cd575704e2a2a00a1a648ba5a5a66c388)  
 
+- [netlify-lambdaの利用をやめて、Zero configurationを導入した - きょーのTechBlog](https://gatolynx.tokyo/geek/netlify-lambda-unistall/)  
+
