@@ -1,8 +1,7 @@
-[functions]
-  external_node_modules = ["express"]
-  node_bundler = "zisi"
+[build]
+ functions='netlify/functions'
+
 [[redirects]]
-  force = true
-  from = "/api/*"
-  status = 200
-  to = "/.netlify/functions/api/:splat"
+ to='/.netlify/functions/api/:splat'
+ from='/*'
+ status=200
