@@ -8,12 +8,12 @@ router.get("/", (_req, res) => {
 });
 router.get("/sample", (_req, res) => res.send("Hello World!!"));
 
-app.get("/robots.txt", (_req, res) => {
+router.get("/robots.txt", (_req, res) => {
   res.type("text/plain");
   res.send("User-agent: *\nDisallow: /");
 });
 
-app.get("/health", (_req, res) => {
+router.get("/health", (_req, res) => {
   res.status(OK).json({ status: OK, text: "Health check ok" });
 });
 
