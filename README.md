@@ -40,7 +40,8 @@ node src/index.js
 
 ### 本番環境
 
-[https://express-webapi-test.herokuapp.com/](https://express-webapi-test.herokuapp.com/)
+[https://express-webapi.vercel.app/api/](https://express-webapi.vercel.app/api/)  
+[https://frolicking-moxie-c1fb9b.netlify.app/api/](https://frolicking-moxie-c1fb9b.netlify.app/api/)  
 
 ### ソースコード
 
