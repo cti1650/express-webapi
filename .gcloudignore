@@ -1,0 +1,12 @@
+.gitignore
+.gcloudignore
+.git
+README.md
+.env.example
+.env
+.gitpod.yml
+.netlify.toml
+Procfile
+vercel.json
+api/*
+!api/cloud_functions
