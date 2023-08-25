@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
-  - npx @google-cloud/functions-framework --target=express_server
+  - functions
   - deploy
   - express_server
   - --runtime
@@ -9,6 +9,6 @@ steps:
   - --region
   - asia-northeast1
   - --entry-point
-  - hello_http
+  - express_server
   - --source
   - api/cloud_functions
