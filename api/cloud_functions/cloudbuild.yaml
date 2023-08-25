@@ -1,6 +1,4 @@
 steps:
-- name: 'gcr.io/cloud-builders/npm'  
-  args: ['install']
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - functions
@@ -12,6 +10,4 @@ steps:
   - asia-northeast1
   - --entry-point
   - expressServer
-  - --source
-  - api/cloud_functions
   - --trigger-http
