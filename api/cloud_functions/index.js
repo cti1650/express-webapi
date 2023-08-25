@@ -5,4 +5,8 @@ const app = require("../../src/server/cloudFunctions");
 
 functions.http("expressServer", app);
 
-exports.expressServer = app
+functions.http("function", app);
+
+module.exports.expressServer = app
+
+module.exports.function = app

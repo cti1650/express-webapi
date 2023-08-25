@@ -4,8 +4,7 @@ steps:
   - functions
   - deploy
   - express_server
-  - --source=api/cloud_functions/
-  - --runtime=nodejs18
+  - --runtime=nodejs20
   - --region=asia-northeast1
   - --entry-point=expressServer
   - --trigger-http
