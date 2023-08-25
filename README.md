@@ -42,6 +42,7 @@ node src/index.js
 
 [https://express-webapi.vercel.app/api/](https://express-webapi.vercel.app/api/)  
 [https://frolicking-moxie-c1fb9b.netlify.app/api/](https://frolicking-moxie-c1fb9b.netlify.app/api/)  
+[https://asia-northeast1-endless-set-138723.cloudfunctions.net/express_server/api/](https://asia-northeast1-endless-set-138723.cloudfunctions.net/express_server/api/)  
 
 ### ソースコード
 
