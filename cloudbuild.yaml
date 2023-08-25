@@ -4,10 +4,7 @@ steps:
   - functions
   - deploy
   - express_server
-  - --runtime
-  - nodejs20
-  - --region
-  - asia-northeast1
-  - --entry-point
-  - expressServer
+  - --runtime=nodejs18
+  - --region=asia-northeast1
+  - --entry-point=expressServer
   - --trigger-http
