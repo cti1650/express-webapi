@@ -8,5 +8,5 @@ README.md
 .netlify.toml
 Procfile
 vercel.json
-api/*
-!api/cloud_functions
+/api/*
+!/api/cloud_functions
