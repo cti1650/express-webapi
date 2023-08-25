@@ -12,3 +12,4 @@ steps:
   - express_server
   - --source
   - api/cloud_functions
+  - --trigger-http
