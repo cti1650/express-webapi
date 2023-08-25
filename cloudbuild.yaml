@@ -9,7 +9,7 @@ steps:
   - --region
   - asia-northeast1
   - --entry-point
-  - express_server
+  - expressServer
   - --source
   - api/cloud_functions
   - --trigger-http
