@@ -10,5 +10,6 @@ Procfile
 vercel.json
 /api/*
 !/api/cloud_functions
+!/api/index.js
 /src/server/*
 !/src/server/cloudFunctions.js
