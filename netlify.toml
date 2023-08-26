@@ -6,3 +6,6 @@
  to='/.netlify/functions/index/:splat'
  from='/*'
  status=200
+
+[build.environment]
+  DEPLOY_SERVER = "netlify"
