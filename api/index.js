@@ -4,8 +4,6 @@ if (!process.env.DEPLOY_SERVER) {
   require("dotenv").config();
 }
 
-const serverless = require("serverless-http");
-
 const deployServer = process.env.DEPLOY_SERVER?.toLowerCase();
 const vercelFlag =
   process.env.VERCEL_ENV === "production" || deployServer === "vercel";
@@ -24,6 +22,7 @@ if (vercelFlag) {
 }
 
 if (netlifyFlag) {
+  const serverless = require("serverless-http");
   app = require("../src/server/netlify");
 
   module.exports = app;
