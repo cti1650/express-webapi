@@ -27,10 +27,10 @@ if (vercelFlag) {
   const functions = require("@google-cloud/functions-framework");
   app = require("../src/server/cloudFunctions");
 
-  functions.http("expressServer", app);
+  functions.http("handler", app);
   functions.http("function", app);
 
-  module.exports.expressServer = app;
+  module.exports.handler = app;
   module.exports.function = app;
 } else {
   app = require("../src/server/local");

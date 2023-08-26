@@ -8,6 +8,6 @@ steps:
   - express_server
   - --runtime=nodejs20
   - --region=asia-northeast1
-  - --entry-point=expressServer
+  - --entry-point=handler
   - --trigger-http
   - --allow-unauthenticated
