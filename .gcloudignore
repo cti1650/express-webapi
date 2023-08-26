@@ -3,7 +3,6 @@
 .git
 README.md
 .env.example
-.env
 .gitpod.yml
 .netlify.toml
 Procfile
