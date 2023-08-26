@@ -1,5 +1,6 @@
 [build]
  functions='api'
+ command='npm run init:netlify'
 
 [[redirects]]
  to='/.netlify/functions/index/:splat'
