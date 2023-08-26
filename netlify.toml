@@ -1,5 +1,5 @@
 [build]
- functions='api/netlify'
+ functions='api'
 
 [[redirects]]
  to='/.netlify/functions/index/:splat'

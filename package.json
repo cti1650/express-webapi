@@ -2,13 +2,13 @@
   "name": "express_webapi",
   "version": "1.0.0",
   "description": "",
-  "main": "api/cloud_functions/index.js",
+  "main": "api/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/local.js",
     "start:local": "node src/server/local.js",
     "start:vercel": "node src/server/vercel.js",
-    "start:functions": "npx @google-cloud/functions-framework --target=expressServer --source=api/cloud_functions"
+    "start:functions": "npx @google-cloud/functions-framework --target=expressServer --source=api"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "dependencies": {
     "@google-cloud/functions-framework": "^3.3.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.17.1",
     "heroku": "^7.59.2"
   },

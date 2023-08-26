@@ -84,3 +84,7 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 - [netlify-lambdaの利用をやめて、Zero configurationを導入した - きょーのTechBlog](https://gatolynx.tokyo/geek/netlify-lambda-unistall/)  
 
 - [Netlify でエクスプレス | Netlify ドキュメント](https://docs.netlify.com/integrations/frameworks/express/)  
+
+- [vercelでprodcutionの時だけbuildの振る舞いを変更する方法 – Tech Blog](https://techblg.app/articles/how-to-modify-building-behavior-on-production-env-vercel/)  
+
+- [ビルド環境変数 | Netlify ドキュメント](https://docs.netlify.com/configure-builds/environment-variables/)  
