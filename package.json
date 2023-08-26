@@ -29,9 +29,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.17.1",
-    "heroku": "^7.59.2"
-  },
-  "devDependencies": {
+    "heroku": "^7.59.2",
     "serverless-http": "^3.2.0"
-  }
+  },
+  "devDependencies": {}
 }
