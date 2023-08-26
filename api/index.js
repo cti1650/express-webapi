@@ -12,25 +12,28 @@ const netlifyFlag =
 const cloudFunctionsFlag =
   process.env.PROJECT_ID || deployServer === "cloudfunctions";
 
-let app = null;
+const port = process.env.PORT || 3000;
+
+const app = require("../src/app");
+const router = require("../src/router/index");
+const config = require("../src/context/config");
+
+app.use(config.endpoint, router);
 
 if (vercelFlag) {
-  app = require("../src/server/vercel");
   module.exports = app;
 } else if (netlifyFlag) {
   const serverless = require("serverless-http");
-  app = require("../src/server/netlify");
-
   module.exports = app;
   module.exports.handler = serverless(app);
 } else if (cloudFunctionsFlag) {
   const functions = require("@google-cloud/functions-framework");
-  app = require("../src/server/cloudFunctions");
-
   functions.http("handler", app);
-
   module.exports.handler = app;
 } else {
-  app = require("../src/server/local");
-  module.exports = app;
+  app.listen(port, () =>
+    console.log(
+      `Local app listening on http://localhost:${port}${config.endpoint}`
+    )
+  );
 }

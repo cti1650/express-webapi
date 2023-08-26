@@ -5,9 +5,9 @@
   "main": "api/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server/local.js",
-    "start:local": "node src/server/local.js",
-    "start:vercel": "node src/server/vercel.js",
+    "start": "node api/index.js",
+    "start:local": "yarn init:local && node api/index.js",
+    "start:vercel": "yarn init:vercel && node api/index.js",
     "start:functions": "yarn init:functions && npx @google-cloud/functions-framework --target=handler --source=api",
     "init:local": "cp env/.env.local .env",
     "init:vercel": "cp env/.env.vercel .env",
