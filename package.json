@@ -8,7 +8,11 @@
     "start": "node src/server/local.js",
     "start:local": "node src/server/local.js",
     "start:vercel": "node src/server/vercel.js",
-    "start:functions": "npx @google-cloud/functions-framework --target=expressServer --source=api"
+    "start:functions": "yarn init:functions && npx @google-cloud/functions-framework --target=expressServer --source=api",
+    "init:local": "cp env/.env.local .env",
+    "init:vercel": "cp env/.env.vercel .env",
+    "init:netlify": "cp env/.env.netlify .env",
+    "init:functions": "cp env/.env.cloudfunctions .env"
   },
   "repository": {
     "type": "git",
