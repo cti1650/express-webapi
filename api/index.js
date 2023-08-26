@@ -7,10 +7,8 @@ const vercelFlag =
   process.env.VERCEL_ENV === "production" || deployServer === "vercel";
 const netlifyFlag = process.env.NETLIFY === true || deployServer === "netlify";
 const cloudFunctionsFlag =
-  (process.env.FUNCTION_SIGNATURE_TYPE === "http" &&
-    process.env.GCLOUD_PROJECT) ||
-  deployServer === "cloudfunctions";
-  
+  process.env.PROJECT_ID || deployServer === "cloudfunctions";
+
 let app = null;
 
 if (vercelFlag) {
