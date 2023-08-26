@@ -9,7 +9,7 @@ const serverless = require("serverless-http");
 const deployServer = process.env.DEPLOY_SERVER?.toLowerCase();
 const vercelFlag =
   process.env.VERCEL_ENV === "production" || deployServer === "vercel";
-const netlifyFlag = process.env.NETLIFY === true || deployServer === "netlify";
+const netlifyFlag = process.env.NETLIFY_DEV !== undefined || deployServer === "netlify";
 const cloudFunctionsFlag =
   process.env.PROJECT_ID || deployServer === "cloudfunctions";
 
