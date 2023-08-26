@@ -1,8 +1,8 @@
 "use strict";
 
-if (!process.env.DEPLOY_SERVER) {
+// if (!process.env.DEPLOY_SERVER) {
   require("dotenv").config();
-}
+// }
 
 const deployServer = process.env.DEPLOY_SERVER?.toLowerCase();
 const vercelFlag =
