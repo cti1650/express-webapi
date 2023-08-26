@@ -1,6 +1,8 @@
 "use strict";
 
-require("dotenv").config();
+if (!process.env.DEPLOY_SERVER) {
+  require("dotenv").config();
+}
 
 const deployServer = process.env.DEPLOY_SERVER?.toLowerCase();
 const vercelFlag =
@@ -10,6 +12,8 @@ const cloudFunctionsFlag =
   process.env.PROJECT_ID || deployServer === "cloudfunctions";
 
 let app = null;
+
+console.log(process.env);
 
 if (vercelFlag) {
   app = require("../src/server/vercel");

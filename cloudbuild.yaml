@@ -1,4 +1,6 @@
 steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['COPY', './env/.env.cloudfunctions','./.env']
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - functions
@@ -9,3 +11,5 @@ steps:
   - --entry-point=expressServer
   - --trigger-http
   - --allow-unauthenticated
+  env:
+  - 'DEPLOY_SERVER=cloudfunctions'
