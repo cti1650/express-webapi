@@ -28,10 +28,8 @@ if (vercelFlag) {
   app = require("../src/server/cloudFunctions");
 
   functions.http("handler", app);
-  functions.http("function", app);
 
   module.exports.handler = app;
-  module.exports.function = app;
 } else {
   app = require("../src/server/local");
   module.exports = app;
